@@ -18,4 +18,10 @@ task("accounts", "Prints the list of accounts", async (taskArgs, hre) => {
  */
 module.exports = {
   solidity: "0.8.4",
+  networks: {
+    ropsten: {
+      url: "https://ropsten.infura.io/v3/9758d58be56f435e8e8bd6372deb1d32",
+      accounts: [`0x${process.env.ACCOUNT_KEY}`]
+    }
+  }
 };

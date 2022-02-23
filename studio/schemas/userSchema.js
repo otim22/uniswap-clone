@@ -14,8 +14,8 @@ export const userSchema = {
             type: 'string',
         },
         {
-            name: 'transaction',
-            title: 'Transaction',
+            name: 'transactions',
+            title: 'Transactions',
             type: 'array',
             of: [
                 {
@@ -25,4 +25,4 @@ export const userSchema = {
             ],
         },
     ],
-}
+  }
